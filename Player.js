@@ -49,10 +49,17 @@ class Player extends Character {
      */
     collide() {
         if (!this.dead) {
+            this.lives -= 1;
+            document.getElementByName('livesli').innerHTML = `lives: ${this.initialLives}`
             setTimeout(() => {
                 this.game.endGame();
+                this.dead = false;
+                this.image.src = this.myImage
             }, 2000);
             super.collide();
+            if (this.lives == 0){
+                this.game.endGame()
+            }
         }
     }
 }
