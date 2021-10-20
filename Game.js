@@ -35,6 +35,8 @@ class Game {
             document.getElementById("reset").addEventListener("click", () => {
                 this.resetGame();
             });
+            document.getElementById('livesli').innerHTML = `Lives: ${VIDAS_INICIAL}`;
+            document.getElementById('scoreli').innerHTML = `Score: ${this.score}`;
             this.started = true;
             this.width = window.innerWidth;
             this.height = window.innerHeight;
