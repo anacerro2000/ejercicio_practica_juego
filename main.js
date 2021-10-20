@@ -21,7 +21,9 @@ const OPPONENT_HEIGHT = 5,
     LIVES = 3,
     BOSS_SPEED = OPPONENT_SPEED,
     BOSS_IMAGE = "assets/jefe.pnj",
-    BOSS_IMAGE_DEAD = "assets/jefe_muerto.pnj"
+    BOSS_IMAGE_DEAD = "assets/jefe_muerto.pnj",
+    YOU_WIN_IMAGE = "you_win.png";
+
 
 function getRandomNumber (range) {
     return Math.floor(Math.random() * range);
