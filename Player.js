@@ -14,7 +14,7 @@ class Player extends Character {
             y = game.height - height,
             speed = PLAYER_SPEED,
             myImage = PLAYER_PICTURE,
-            myImageDead = PLAYER_PICTURE_DEAD;
+            myImageDead = PLAYER_PICTURE_DEAD,
             lives = LIVES;
 
         super(game, width, height, x, y, speed, myImage, myImageDead);

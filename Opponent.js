@@ -66,7 +66,7 @@ class Opponent extends Character {
         
         if (!this.dead) {
             this.game.score += 1
-            document.getElementsById("scoreli")
+            document.getElementsById("scoreli").innerHTML = `Score: ${this.game.score}`;
             setTimeout(() => {
                 this.game.removeOpponent();
             }, 2000);
